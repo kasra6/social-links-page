@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Green: hsl(75, 94%, 57%);
+
+  --Grey-900: hsl(0, 0%, 8%);
+  --Grey-800: hsl(0, 0%, 12%);
+  --Grey-700: hsl(0, 0%, 20%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  min-width: 375px;
+  max-width: 1440px;
+}
+
+.bg-container {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: var(--Grey-900);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--Grey-800);
+  color: var(--White);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 40px 40px;
+  border-radius: 10px;
+  width: 385px;
+}
+
+.card img {
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+}
+
+.card h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 30px auto 10px;
+}
+
+.card h2 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--Green);
+}
+
+.card p::before,
+.card p::after {
+  content: '"';
+}
+
+.card p {
+  font-size: 14px;
+  margin: 30px auto 20px;
+}
+
+.card ul {
+  list-style: none;
+  width: 100%;
+}
+
+.card li {
+  text-align: center;
+  background-color: var(--Grey-700);
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+  border-radius: 10px;
+}
+
+.card li:last-of-type {
+  margin-bottom: 0;
+}
+
+.card li a {
+  color: var(--White);
+  text-decoration: none;
+  padding: 13px;
+  display: inline-block;
+  width: 100%;
+  border-radius: 10px;
+  transition-property: all;
+  transition-duration: 0.4s;
+}
+
+.card li a:hover {
+  background-color: var(--Green);
+  color: var(--Grey-900);
+}
+
+@media (max-width: 375px) {
+  .card {
+    width: 375px;
+  }
+}
