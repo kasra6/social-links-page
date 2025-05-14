@@ -20,7 +20,7 @@
 body {
   font-family: "Inter", sans-serif;
   font-size: 14px;
-  min-width: 375px;
+  min-width: 350px;
   max-width: 1440px;
 }
 
@@ -40,7 +40,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px 40px 40px;
+  padding: 40px 40px 40px;
   border-radius: 10px;
   width: 385px;
 }
@@ -107,8 +107,9 @@ body {
   color: var(--Grey-900);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .card {
-    width: 375px;
+    max-width: 85%;
+    margin: 0 auto;
   }
 }
